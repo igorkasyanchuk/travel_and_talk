@@ -20,6 +20,7 @@ gem "bcrypt-ruby", :require => "bcrypt"
 gem 'formtastic', '1.1.0.beta'
 gem 'hassle', :path => File.join(File.dirname(__FILE__), '/vendor/gems/hassle'), :group => :production 
 gem 'RedCloth'
+gem "auto_html"
 
 group :test do
   gem "shoulda"

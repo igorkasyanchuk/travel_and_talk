@@ -1,6 +1,7 @@
 %html
   %head
     %title= yield :title
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     = stylesheet_link_tag 'uniform.default', 'application', 'formtastic', 'formtastic_changes' 
     = yield :css
     = yield :js
@@ -16,6 +17,7 @@
     #root
       #content
         .container= raw(flash_messages)
+        .container= render '/shared/header'
         .container= yield
       #root_footer
     #footer

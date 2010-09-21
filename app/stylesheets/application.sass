@@ -1,4 +1,6 @@
 @import "base"
+@import "colors"
+@import "header"
 
 $border_for_notice: unquote("1px solid #ccc")
 
@@ -78,26 +80,8 @@ $border_for_notice: unquote("1px solid #ccc")
     float: right
 
 html body
+  font-size: 14px
   line-height: 1.5em
-
-.reset_all
-  *
-    padding: 0
-    margin: 0
-    font-size: 100%
-
-ul li.top_border
-  border-top: 1px solid #eeeeee
-
-.font_09
-  font-size: 0.9em
-
-.w_50
-  width: 50%
-  
-hr
-  margin: 5px 0px
-  border-top: 1px dashed #dddddd
 
 .clear
   clear: both  
@@ -120,7 +104,3 @@ th
     background-image: url(/images/sort-asc1.png)
   .desc
     background-image: url(/images/sort-desc1.png)
-    
-    
-html dl
-  margin-top: 0em

@@ -1,0 +1,6 @@
+%ul#general_nav
+  %li= link_to 'Profile', user_path(current_user)
+  - if current_user.is_admin?
+    %li= link_to 'Admin Panel', admin_path
+.clear
+    

@@ -2266,7 +2266,61 @@ dd.body img {
   padding: 5px 6px;
 }
 
-/* line 12, ../../app/stylesheets/application.sass */
+/* line 1, ../../app/stylesheets/_header.sass */
+#logo {
+  float: left;
+}
+/* line 5, ../../app/stylesheets/_header.sass */
+#logo h1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: normal;
+  font-family: "Lobster", Helvetica, Arial, sans-serif;
+  color: #4279bc;
+  text-shadow: 2px 2px 2px black;
+  font-weight: normal;
+}
+/* line 23, ../../app/stylesheets/_header.sass */
+#logo h1 a {
+  color: #4279bc;
+  text-decoration: none;
+}
+
+/* line 31, ../../app/stylesheets/_header.sass */
+ul#nav {
+  float: right;
+}
+/* line 35, ../../app/stylesheets/_header.sass */
+ul#nav li {
+  float: left;
+  list-style-type: none;
+  padding-left: 6px;
+}
+
+/* line 45, ../../app/stylesheets/_header.sass */
+ul#general_nav {
+  margin: 6px 0 6px 0;
+}
+/* line 49, ../../app/stylesheets/_header.sass */
+ul#general_nav li {
+  float: left;
+  list-style-type: none;
+  padding-left: 6px;
+}
+
+/* line 59, ../../app/stylesheets/_header.sass */
+ul#admin_nav {
+  margin: 6px 0 6px 0;
+}
+/* line 63, ../../app/stylesheets/_header.sass */
+ul#admin_nav li {
+  float: left;
+  list-style-type: none;
+  padding-left: 6px;
+}
+
+/* line 14, ../../app/stylesheets/application.sass */
 #root {
   margin-left: auto;
   margin-right: auto;
@@ -2471,14 +2525,14 @@ dd.body img {
 #root .omega {
   margin-right: 0;
 }
-/* line 14, ../../app/stylesheets/application.sass */
+/* line 16, ../../app/stylesheets/application.sass */
 #root #header {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
   height: 80px;
 }
-/* line 17, ../../app/stylesheets/application.sass */
+/* line 19, ../../app/stylesheets/application.sass */
 #root #header #logo {
   display: inline;
   float: left;
@@ -2487,11 +2541,11 @@ dd.body img {
   width: 340px;
   margin-left: 0;
 }
-/* line 20, ../../app/stylesheets/application.sass */
+/* line 22, ../../app/stylesheets/application.sass */
 #root #header #logo h1 {
   font-size: 2.3em;
 }
-/* line 22, ../../app/stylesheets/application.sass */
+/* line 24, ../../app/stylesheets/application.sass */
 #root #header #nav_container {
   display: inline;
   float: left;
@@ -2501,7 +2555,7 @@ dd.body img {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 26, ../../app/stylesheets/application.sass */
+/* line 28, ../../app/stylesheets/application.sass */
 #root #header #nav_container ul#nav {
   display: inline;
   float: right;
@@ -2533,16 +2587,16 @@ dd.body img {
 #root #header #nav_container ul#nav li:last-child, #root #header #nav_container ul#nav li.last {
   padding-right: 0px;
 }
-/* line 31, ../../app/stylesheets/application.sass */
+/* line 33, ../../app/stylesheets/application.sass */
 #root #header #nav_container ul#nav li {
   text-align: right;
 }
-/* line 33, ../../app/stylesheets/application.sass */
+/* line 35, ../../app/stylesheets/application.sass */
 #root #header #nav_container ul#nav li a {
   font-size: 0.9em;
   padding: 2px 2px;
 }
-/* line 37, ../../app/stylesheets/application.sass */
+/* line 39, ../../app/stylesheets/application.sass */
 #root #content .container {
   display: inline;
   float: left;
@@ -2550,7 +2604,7 @@ dd.body img {
   margin-right: 10px;
   width: 940px;
 }
-/* line 39, ../../app/stylesheets/application.sass */
+/* line 41, ../../app/stylesheets/application.sass */
 #root #content div.flash {
   display: inline;
   float: left;
@@ -2566,19 +2620,19 @@ dd.body img {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
 }
-/* line 48, ../../app/stylesheets/application.sass */
+/* line 50, ../../app/stylesheets/application.sass */
 #root #content div.flash.error {
   color: #8a1f11;
   background: #fff6bf;
   border-color: #ffd324;
 }
-/* line 52, ../../app/stylesheets/application.sass */
+/* line 54, ../../app/stylesheets/application.sass */
 #root #content div.flash.notice {
   color: #514721;
   background: #fff6bf;
   border-color: #ffd324;
 }
-/* line 56, ../../app/stylesheets/application.sass */
+/* line 58, ../../app/stylesheets/application.sass */
 #root #content #admin_menu {
   display: inline;
   float: left;
@@ -2592,7 +2646,7 @@ dd.body img {
   position: relative;
   z-index: 11;
 }
-/* line 64, ../../app/stylesheets/application.sass */
+/* line 66, ../../app/stylesheets/application.sass */
 #root #content #admin_section {
   display: inline;
   float: left;
@@ -2603,91 +2657,59 @@ dd.body img {
   margin-right: 0;
   padding-bottom: 1em;
 }
-/* line 69, ../../app/stylesheets/application.sass */
+/* line 71, ../../app/stylesheets/application.sass */
 #root #content #admin_section h1, #root #content #admin_section h2, #root #content #admin_section h3 {
   margin: 0.5em 0;
 }
 
-/* line 73, ../../app/stylesheets/application.sass */
+/* line 75, ../../app/stylesheets/application.sass */
 #footer hr {
   margin: 0;
 }
-/* line 75, ../../app/stylesheets/application.sass */
+/* line 77, ../../app/stylesheets/application.sass */
 #footer a {
   font-size: 0.9em;
   padding-top: 4px;
   float: right;
 }
 
-/* line 80, ../../app/stylesheets/application.sass */
+/* line 82, ../../app/stylesheets/application.sass */
 html body {
+  font-size: 14px;
   line-height: 1.5em;
 }
 
-/* line 84, ../../app/stylesheets/application.sass */
-.reset_all * {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-}
-
-/* line 89, ../../app/stylesheets/application.sass */
-ul li.top_border {
-  border-top: 1px solid #eeeeee;
-}
-
-/* line 92, ../../app/stylesheets/application.sass */
-.font_09 {
-  font-size: 0.9em;
-}
-
-/* line 95, ../../app/stylesheets/application.sass */
-.w_50 {
-  width: 50%;
-}
-
-/* line 98, ../../app/stylesheets/application.sass */
-hr {
-  margin: 5px 0px;
-  border-top: 1px dashed #dddddd;
-}
-
-/* line 102, ../../app/stylesheets/application.sass */
+/* line 86, ../../app/stylesheets/application.sass */
 .clear {
   clear: both;
 }
 
-/* line 105, ../../app/stylesheets/application.sass */
+/* line 89, ../../app/stylesheets/application.sass */
 .left {
   float: left;
 }
 
-/* line 108, ../../app/stylesheets/application.sass */
+/* line 92, ../../app/stylesheets/application.sass */
 .right {
   float: right;
 }
 
-/* line 111, ../../app/stylesheets/application.sass */
+/* line 95, ../../app/stylesheets/application.sass */
 .block {
   display: block;
 }
 
-/* line 115, ../../app/stylesheets/application.sass */
+/* line 99, ../../app/stylesheets/application.sass */
 th .current {
   padding-right: 20px;
   background-repeat: no-repeat;
   background-position: right center;
 }
-/* line 119, ../../app/stylesheets/application.sass */
+/* line 103, ../../app/stylesheets/application.sass */
 th .asc {
   background-image: url(/images/sort-asc1.png);
 }
-/* line 121, ../../app/stylesheets/application.sass */
+/* line 105, ../../app/stylesheets/application.sass */
 th .desc {
   background-image: url(/images/sort-desc1.png);
-}
-
-/* line 125, ../../app/stylesheets/application.sass */
-html dl {
-  margin-top: 0em;
 }

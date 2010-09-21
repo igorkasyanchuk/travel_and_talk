@@ -34,4 +34,10 @@ module ApplicationHelper
     date.utc.strftime("%Y-%m-%dT%H:%M:%S+00:00")
   end  
 
+  def add_google_map
+    content_for :map do
+      '<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>'
+    end
+  end
+
 end
