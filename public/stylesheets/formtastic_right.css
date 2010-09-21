@@ -1,0 +1,71 @@
+/* line 4, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic { font-size: 0.9em; }
+/* line 8, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs fieldset.inputs fieldset { border: 0 none; }
+/* line 10, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs fieldset.inputs fieldset legend { border: 0 none; }
+/* line 12, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset { width: auto; padding: 0; margin-bottom: 0.3em; }
+/* line 18, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset ol ol ol { margin-left: 12.6em; }
+/* line 21, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset ol ol ol li label { float: none; }
+/* line 23, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic ol, form.formtastic ul { list-style-type: none; margin: 0.3em 2em; }
+/* line 26, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic ol li, form.formtastic ul li { margin: 0.4em 0; }
+/* line 28, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic ol li label, form.formtastic ul li label { float: left; text-align: right; width: 12em; padding: 0 0.3em; padding-right: 0.8em; }
+/* line 34, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic ol li label abbr, form.formtastic ul li label abbr { color: red; text-decoration: none; border-bottom: 0 none; }
+/* line 38, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic ol li input, form.formtastic ul li input { width: 18em; }
+/* line 40, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic ol li input[type='checkbox'], form.formtastic ul li input[type='checkbox'] { height: 1.5em; width: auto; margin-left: 0; }
+/* line 45, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.buttons ol, form.formtastic fieldset.buttons ul { margin-left: 14.9em; }
+/* line 47, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.buttons ol input, form.formtastic fieldset.buttons ul input { width: auto; padding: 0.1em 0.3em; }
+/* line 51, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic span.field_with_errors input, form.formtastic span.field_with_errors select, form.formtastic span.field_with_errors textarea { border: 1px solid red; }
+/* line 54, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic #tabs ul.tabs_container { margin: 6px 0px; padding: 0px 10px; margin-bottom: 0; }
+/* line 59, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic #tabs ul.tabs_container li a { font-size: 0.9em; font-weight: normal; }
+/* line 65, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio label { width: auto; }
+/* line 67, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio fieldset { position: relative; }
+/* line 69, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio fieldset legend { position: absolute; }
+/* line 71, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio fieldset legend span { position: absolute; top: 0.3em; left: 0; text-align: right; width: 12.3em; }
+/* line 77, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio fieldset ol { margin-left: 12.6em; }
+/* line 79, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio fieldset ol li { margin-top: 0.1em; margin-bottom: 0.1em; display: inline; }
+/* line 83, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio fieldset ol li label { padding: 0; }
+/* line 85, ../../app/stylesheets/formtastic_right.sass */
+form.formtastic fieldset.inputs ol li.radio fieldset ol li label input[type='radio'] { width: auto; }
+
+/* line 90, ../../app/stylesheets/formtastic_right.sass */
+#login_box form.formtastic input[type='checkbox'] { display: inline; }
+
+/* line 94, ../../app/stylesheets/formtastic_right.sass */
+div.errorExplanation ul, div.errorExplanation ul li { list-style-type: decimal; }
+
+/* line 97, ../../app/stylesheets/formtastic_right.sass */
+html dd ol { margin-top: 0.3em; margin-bottom: 0.3em; }
+
+/* line 101, ../../app/stylesheets/formtastic_right.sass */
+html body { line-height: 1.5em; }
+
+/* line 106, ../../app/stylesheets/formtastic_right.sass */
+div.custom_form div.row div.label { float: left; width: 12em; text-align: right; padding-right: 0.3em; }
+/* line 111, ../../app/stylesheets/formtastic_right.sass */
+div.custom_form div.row div.field { float: left; }
+/* line 113, ../../app/stylesheets/formtastic_right.sass */
+div.custom_form div.row div.field label { display: inline; }
+/* line 115, ../../app/stylesheets/formtastic_right.sass */
+div.custom_form div.row div.clear { clear: both; }
