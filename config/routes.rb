@@ -4,15 +4,23 @@ RailsjazzCom::Application.routes.draw do
   end
   resources :password_resets
   resources :users
+  resources :companies, :only => [:show]
   
   namespace :admin do
     match '/', :to => 'dashboard#welcome'
-    resources :users
+    resources :users do
+      member do
+        get :toggle_admin
+      end
+    end
     resources :companies
   end
   
   namespace :dashboard do
     match '/', :to => 'dashboard#welcome'
+    resources :users, :only => [] do
+      resources :companies
+    end
   end
   
   root :controller => 'home', :action => 'index'

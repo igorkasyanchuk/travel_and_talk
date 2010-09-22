@@ -1,0 +1,17 @@
+%h1.left Companies
+.subnav.right= link_to 'Add Company', new_resource_path, :class => 'add_company_button'
+.clear
+
+- unless @companies.empty?
+  %table.zebra
+    %thead
+      %tr
+        %th Name
+    %tbody
+      - for company in @companies
+        %tr{ :class => "#{cycle(:odd, :even)}" }
+          %td= link_to company.name, [:dashboard, current_user, company]
+
+- else
+  %p
+    %strong List is empty.

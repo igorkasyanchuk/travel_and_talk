@@ -1,6 +1,9 @@
 %ul#general_nav
+  %li.companies_menu= link_to 'Companies', dashboard_user_companies_path(current_user)
   %li= link_to 'Profile', user_path(current_user)
   - if current_user.is_admin?
     %li= link_to 'Admin Panel', admin_path
 .clear
     
+- content_for :on_ready do
+  == $('#general_nav .#{controller_name}_menu').addClass('selected');

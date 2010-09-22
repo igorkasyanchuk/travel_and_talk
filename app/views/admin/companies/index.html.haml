@@ -1,0 +1,17 @@
+%h1 All Companies
+
+- unless @companies.empty?
+  %table.zebra
+    %thead
+      %tr
+        %th Name
+        %th Actions
+    %tbody
+      - for company in @companies
+        %tr{ :class => "#{cycle(:odd, :even)}" }
+          %td= link_to company.name, company
+          %td= link_to 'delete', [:admin, company], :confirm => 'Are you sure?', :method => :delete, :class => 'delete_company_button'
+
+- else
+  %p
+    %strong List is empty.

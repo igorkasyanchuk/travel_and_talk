@@ -1,0 +1,16 @@
+= title @company.name
+
+%h1.left= @company.name
+.subnav.right
+  = link_to 'Edit', edit_resource_path(@company), :class => 'edit_company_button'
+  = link_to 'Delete', resource_path(@company), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_company_button'
+.clear
+
+%dl
+  - if @company.name.present?
+    %dt Name
+    %dd= @company.name
+    
+  - if @company.description.present?
+    %dt Description
+    %dd= @company.description

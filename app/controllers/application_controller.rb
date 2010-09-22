@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  helper_method :current_user_session, :current_user, :logged_in?
+  helper_method :current_user_session, :current_user, :logged_in?, :require_admin_user
 
   private
 
@@ -25,6 +25,13 @@ class ApplicationController < ActionController::Base
         flash[:notice] = "You must be logged in to access this page"
         redirect_to new_user_session_url
         return false
+      end
+    end
+    
+    def require_admin_user
+      unless current_user && current_user.is_admin?
+        flash[:notice] = "You don't have permissions to access this page"
+        redirect_to dashboard_path
       end
     end
 

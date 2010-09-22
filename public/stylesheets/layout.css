@@ -1,8 +1,8 @@
 /*
 Syntax error: Undefined mixin 'global-reset'.
-        on line 3 of /root/work/railsjazz.com/app/stylesheets/grid.sass, in `global-reset'
-        from line 3 of /root/work/railsjazz.com/app/stylesheets/grid.sass
-        from line 1 of /root/work/railsjazz.com/app/stylesheets/layout.sass
+        on line 3 of /root/work/travel_and_talk/app/stylesheets/grid.sass, in `global-reset'
+        from line 3 of /root/work/travel_and_talk/app/stylesheets/grid.sass
+        from line 1 of /root/work/travel_and_talk/app/stylesheets/layout.sass
 
 1: @import "grid"
 2: @import "text"
@@ -14,9 +14,9 @@ Syntax error: Undefined mixin 'global-reset'.
 8: 
 
 Backtrace:
-/root/work/railsjazz.com/app/stylesheets/grid.sass:3:in `global-reset'
-/root/work/railsjazz.com/app/stylesheets/grid.sass:3
-/root/work/railsjazz.com/app/stylesheets/layout.sass:1
+/root/work/travel_and_talk/app/stylesheets/grid.sass:3:in `global-reset'
+/root/work/travel_and_talk/app/stylesheets/grid.sass:3
+/root/work/travel_and_talk/app/stylesheets/layout.sass:1
 /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/haml-3.0.18/lib/sass/tree/mixin_node.rb:74:in `perform!'
 /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/haml-3.0.18/lib/sass/tree/node.rb:305:in `_perform'
 /opt/ruby-enterprise-1.8.7-2010.01/lib/ruby/gems/1.8/gems/haml-3.0.18/lib/sass/tree/node.rb:213:in `perform'
@@ -98,4 +98,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'global-reset'.\A         on line 3 of /root/work/railsjazz.com/app/stylesheets/grid.sass, in `global-reset'\A         from line 3 of /root/work/railsjazz.com/app/stylesheets/grid.sass\A         from line 1 of /root/work/railsjazz.com/app/stylesheets/layout.sass\A \A 1: @import \"grid\"\A 2: @import \"text\"\A 3: \A 4: .column1_1\A 5:   +grid(16)\A 6:   +alpha\A 7:   +omega\A 8: "; }
+  content: "Syntax error: Undefined mixin 'global-reset'.\A         on line 3 of /root/work/travel_and_talk/app/stylesheets/grid.sass, in `global-reset'\A         from line 3 of /root/work/travel_and_talk/app/stylesheets/grid.sass\A         from line 1 of /root/work/travel_and_talk/app/stylesheets/layout.sass\A \A 1: @import \"grid\"\A 2: @import \"text\"\A 3: \A 4: .column1_1\A 5:   +grid(16)\A 6:   +alpha\A 7:   +omega\A 8: "; }

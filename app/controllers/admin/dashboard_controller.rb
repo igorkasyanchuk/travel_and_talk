@@ -4,6 +4,7 @@ class Admin::DashboardController < InheritedResources::Base
   
   respond_to :html, :xml, :json
   before_filter :require_user
+  before_filter :require_admin_user
   layout 'admin'
   
   def welcome

@@ -33,3 +33,18 @@ ul#admin_nav
     float: left
     list-style-type: none
     padding-left: 6px
+
+ul#general_nav, ul#admin_nav
+  :float left
+  :margin-left 0
+  li
+    font-size: 18px
+    float: left
+    list-style-type: none
+    margin: 3px 16px 3px 0px
+    padding: 3px 4px
+    -moz-border-radius: 12px
+    -webkit-border-radius: 12px
+    background: $menu_background_color_not_selected
+    &:hover, &.selected
+      background: $menu_background_color

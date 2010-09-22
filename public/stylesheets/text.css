@@ -160,198 +160,62 @@ html dl dt, html dl dl {
 }
 
 /* line 66, ../../app/stylesheets/text.sass */
-.add_button {
+.remove_user_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/add.png) no-repeat center left;
+  background: url(/images/fugue/user--minus.png) no-repeat center left;
   font-size: 12px;
 }
 
 /* line 69, ../../app/stylesheets/text.sass */
-.edit_button {
+.share_user_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/application_edit.png) no-repeat center left;
+  background: url(/images/fugue/user-share.png) no-repeat center left;
   font-size: 12px;
 }
 
 /* line 72, ../../app/stylesheets/text.sass */
-.show_button {
+.add_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/application_go.png) no-repeat center left;
+  background: url(/images/fugue/building--plus.png) no-repeat center left;
   font-size: 12px;
 }
 
 /* line 75, ../../app/stylesheets/text.sass */
-.delete_button {
+.cancel_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/application_delete.png) no-repeat center left;
+  background: url(/images/fugue/navigation-180-button.png) no-repeat center left;
   font-size: 12px;
 }
 
 /* line 78, ../../app/stylesheets/text.sass */
-.list_button {
+.edit_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/table.png) no-repeat center left;
+  background: url(/images/fugue/building--pencil.png) no-repeat center left;
   font-size: 12px;
 }
 
 /* line 81, ../../app/stylesheets/text.sass */
-.cancel_button {
+.show_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/table_delete.png) no-repeat center left;
+  background: url(/images/fugue/building--arrow.png) no-repeat center left;
   font-size: 12px;
 }
 
 /* line 84, ../../app/stylesheets/text.sass */
-.roles_button {
+.delete_company_button {
   padding-left: 18px;
   padding-left: 18px !important;
-  background: url(/images/icons/shield_go.png) no-repeat center left;
+  background: url(/images/fugue/building--minus.png) no-repeat center left;
   font-size: 12px;
 }
 
 /* line 87, ../../app/stylesheets/text.sass */
-.activate_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/note_add.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 90, ../../app/stylesheets/text.sass */
-.suspend_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/note_delete.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 93, ../../app/stylesheets/text.sass */
-.restore_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/note_go.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 96, ../../app/stylesheets/text.sass */
-.projects_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/page_white_text.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 99, ../../app/stylesheets/text.sass */
-.archive_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/package_add.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 102, ../../app/stylesheets/text.sass */
-.check_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/accept.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 105, ../../app/stylesheets/text.sass */
-.discuss_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/comment_edit.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 108, ../../app/stylesheets/text.sass */
-.close_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/drive_go.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 111, ../../app/stylesheets/text.sass */
-.view_buttom {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/page_go.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 114, ../../app/stylesheets/text.sass */
-.gallery_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/image_add.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 117, ../../app/stylesheets/text.sass */
-.change_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/page_white_wrench.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 120, ../../app/stylesheets/text.sass */
-.dashboard_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/application_home.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 123, ../../app/stylesheets/text.sass */
-.logout_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/disconnect.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 126, ../../app/stylesheets/text.sass */
-.resources_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/table_multiple.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 129, ../../app/stylesheets/text.sass */
-.questions_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/help.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 132, ../../app/stylesheets/text.sass */
-.translations_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/table_relationship.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 135, ../../app/stylesheets/text.sass */
-.remove_item_button {
-  padding-left: 18px;
-  padding-left: 18px !important;
-  background: url(/images/icons/fileclose.png) no-repeat center left;
-  font-size: 12px;
-}
-
-/* line 138, ../../app/stylesheets/text.sass */
 .bold_text {
   font-weight: bold;
 }

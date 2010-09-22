@@ -1,5 +1,8 @@
 %ul#admin_nav
-  %li= link_to 'Users', '#'
-  %li= link_to 'Companies', '#'
-  %li= link_to 'Back to Dashboard', dashboard_path
+  %li.users_menu= link_to 'Users', admin_users_path
+  %li.companies_menu= link_to 'Companies', admin_companies_path
+  %li.back_menu= link_to 'Back to Dashboard', dashboard_path
 .clear
+
+- content_for :on_ready do
+  == $('#admin_nav .#{controller_name}_menu').addClass('selected');

@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :if => :require_password?
   validates_presence_of :password_confirmation, :if => :require_password?
   
+  has_many :companies, :dependent => :destroy
+  
   scope :admins, where(:admin => true)
   
   def name
@@ -27,6 +29,11 @@ class User < ActiveRecord::Base
   
   def is_admin?
     admin
+  end
+  
+  def toggle_admin!
+    self.admin = !is_admin?
+    self.save
   end
 
 end

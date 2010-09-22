@@ -1,0 +1,25 @@
+%h1 Users
+
+%table.zebra
+  %thead
+    %tr
+      %th Created
+      %th Full Name
+      %th Admin?
+      %th Email
+      %th IP Address
+      %th Last Login
+      %th # Logins
+      %th Actions
+  
+  %tbody
+    - for user in @users
+      %tr{ :class => cycle(:odd, :even) }
+        %td= user.created_at.to_date
+        %td= user.name
+        %td= link_to (yes_no(user.is_admin?)), toggle_admin_admin_user_path(user), :class => 'share_user_button'
+        %td= user.email
+        %td= user.last_login_ip
+        %td= user.last_login_at.to_s(:short) rescue nil
+        %td= user.login_count
+        %td= link_to 'remove', resource_path(user), :class => 'remove_user_button', :method => :delete, :confirm => 'Delete User?'

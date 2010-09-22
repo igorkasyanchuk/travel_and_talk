@@ -1,0 +1,7 @@
+%h1.left== Edit: #{@company.name}
+.add.right
+  = link_to 'Back', collection_path, :class => 'cancel_button'
+  = link_to 'Show', resource_path(@project), :class => 'show_company_button'
+  = link_to 'Delete', resource_path(@project), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_company_button'
+.clear
+= render 'form'

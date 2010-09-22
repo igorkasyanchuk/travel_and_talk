@@ -39,5 +39,9 @@ module ApplicationHelper
       '<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>'
     end
   end
+  
+  def yes_no(b)
+    b ? 'yes' : b.nil? ? '' : 'no'
+  end
 
 end
