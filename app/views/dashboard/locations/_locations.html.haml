@@ -1,0 +1,22 @@
+.locations
+  - if company.locations.count > 0
+    .location
+      .location_date
+        .date
+          %strong Date/Time
+      .name 
+        %strong Name
+      .message 
+        %strong Description
+      .controls 
+        %strong Actions
+      .clear  
+    - company.locations.backward.each do |location|
+      = render :partial => '/dashboard/locations/location', :locals => { :location => location }
+    .location.summary
+      .amount.amount_total
+        %strong Total: #{pluralize(company.locations.count, 'location')}
+      .clear
+  - else
+    .locations_list_is_empty
+      %i List is empty. Add location.

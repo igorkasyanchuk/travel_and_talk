@@ -1,0 +1,8 @@
+.location{ :class => cycle(:odd, :even), :id => "location-#{location.id}" }
+  .location_date
+    .date= location.created_at.to_date.to_s(:short_date)
+    .time= location.created_at.to_s(:time_12)
+  .name= location.name
+  .message!= RedCloth.new(location.description).to_html
+  .controls= link_to 'remove', [:dashboard, current_user, location.company, location], :remote => true, :method => :delete, :confirm => 'Are you sure?', :class => 'remove_item_button'
+  .clear

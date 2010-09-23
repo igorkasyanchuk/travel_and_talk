@@ -1,3 +1,6 @@
+- content_for :on_ready do
+  init_add_form(); 
+
 = title @company.name
 
 %h1.left= @company.name
@@ -6,11 +9,51 @@
   = link_to 'Delete', resource_path(@company), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_company_button'
 .clear
 
-%dl
+%table.zebra.w49
   - if @company.name.present?
-    %dt Name
-    %dd= @company.name
-    
+    %tr
+      %td Name
+      %td= @company.name
+  
+  - if @company.company_category.present?
+    %tr
+      %td Category
+      %td= @company.company_category.name
+      
+  - if @company.country.present?
+    %tr
+      %td Country
+      %td= @company.country
+      
+  - if @company.from_usa? && @company.state.present?
+    %tr
+      %td State
+      %td= @company.state
+
+  - if @company.city.present?
+    %tr
+      %td City
+      %td= @company.city
+      
+  - if @company.city.present?
+    %tr
+      %td Address
+      %td= @company.address
+      
   - if @company.description.present?
-    %dt Description
-    %dd= @company.description
+    %tr
+      %td Description
+      %td= @company.description
+
+%h2.left Locations
+.right.subnav= link_to 'Add Location', '#', :class => 'add_button', :to => '.location_form'
+.clear
+= render :partial => '/dashboard/locations/locations', :locals => { :company => @company }
+.add_more_block
+  = semantic_form_for [:dashboard, current_user, @company, @company.locations.build], :remote => true, :html => { :class => 'none location_form' } do |f|
+    = f.inputs do
+      = f.input :name, :label => 'Name'
+      = f.input :description, :input_html => { :rows => '2', :cols => '40' }, :label => 'Location Description'
+    = f.buttons do
+      = f.submit 'Add new Location'
+      = link_to 'Hide', '#', :class => 'hide cancel_button'

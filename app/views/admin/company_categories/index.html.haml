@@ -1,0 +1,17 @@
+%h1.left Categories
+.subnav.right= link_to 'Add Category', new_resource_path, :class => 'add_button'
+.clear
+
+- unless @company_categories.empty?
+  %table.zebra
+    %thead
+      %tr
+        %th Name
+    %tbody
+      - for company_category in @company_categories
+        %tr{ :class => "#{cycle(:odd, :even)}" }
+          %td= link_to company_category.name, [:admin, company_category]
+
+- else
+  %p
+    %strong List is empty.

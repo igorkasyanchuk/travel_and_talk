@@ -216,6 +216,46 @@ html dl dt, html dl dl {
 }
 
 /* line 87, ../../app/stylesheets/text.sass */
+.delete_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/notebook--minus.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 90, ../../app/stylesheets/text.sass */
+.edit_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/notebook--pencil.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 93, ../../app/stylesheets/text.sass */
+.show_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/notebook--arrow.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 96, ../../app/stylesheets/text.sass */
+.add_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/notebook--arrow.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 99, ../../app/stylesheets/text.sass */
+.remove_item_button {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/fileclose.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 102, ../../app/stylesheets/text.sass */
 .bold_text {
   font-weight: bold;
 }

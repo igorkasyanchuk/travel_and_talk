@@ -1,8 +1,16 @@
+= content_for :on_ready do
+  init_company_form();
+  
 = error_messages_for :company
 
 = semantic_form_for([:dashboard, current_user, @company]) do |f|
-  - f.inputs do
+  = f.inputs do
     = f.input :name
+    = f.input :company_category
+    = f.input :country, :priority_countries => ["United States", "Canada", "United Kingdom"]
+    = f.input :state, :collection => STATES
+    = f.input :city
+    = f.input :address
     = f.input :description
-  - f.buttons do
+  = f.buttons do
     = f.submit f.object.new_record? ? 'Create' : "Update"

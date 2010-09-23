@@ -1,7 +1,8 @@
 %ul#admin_nav
   %li.users_menu= link_to 'Users', admin_users_path
   %li.companies_menu= link_to 'Companies', admin_companies_path
-  %li.back_menu= link_to 'Back to Dashboard', dashboard_path
+  %li.company_categories_menu= link_to 'Categories', admin_company_categories_path
+  %li.back_menu= link_to 'Back to Dashboard &rarr;'.html_safe, dashboard_path
 .clear
 
 - content_for :on_ready do

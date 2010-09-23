@@ -1,0 +1,7 @@
+= error_messages_for :company_category
+
+= semantic_form_for([:admin, @company_category]) do |f|
+  - f.inputs do
+    = f.input :name
+  - f.buttons do
+    = f.submit f.object.new_record? ? 'Create' : "Update"

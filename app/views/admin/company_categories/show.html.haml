@@ -1,0 +1,12 @@
+= title @company_category.name
+
+%h1.left= @company_category.name
+.subnav.right
+  = link_to 'Edit', edit_resource_path(@company_category), :class => 'edit_button'
+  = link_to 'Delete', resource_path(@company_category), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_button'
+.clear
+
+%dl
+  - if @company_category.name.present?
+    %dt Name
+    %dd= @company_category.name   

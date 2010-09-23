@@ -7,10 +7,12 @@
     %thead
       %tr
         %th Name
+        %th Locations
     %tbody
       - for company in @companies
         %tr{ :class => "#{cycle(:odd, :even)}" }
           %td= link_to company.name, [:dashboard, current_user, company]
+          %td #{company.locations.count}
 
 - else
   %p

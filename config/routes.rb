@@ -14,12 +14,15 @@ RailsjazzCom::Application.routes.draw do
       end
     end
     resources :companies
+    resources :company_categories
   end
   
   namespace :dashboard do
     match '/', :to => 'dashboard#welcome'
     resources :users, :only => [] do
-      resources :companies
+      resources :companies do
+        resources :locations
+      end
     end
   end
   
