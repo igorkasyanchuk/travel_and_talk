@@ -6,6 +6,7 @@ group :development do
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
+
 gem 'haml', '3.0.18'
 gem 'compass', '0.10.5'
 gem "will_paginate", "~> 3.0.pre2"
@@ -20,10 +21,15 @@ gem "bcrypt-ruby", :require => "bcrypt"
 gem 'formtastic', '1.1.0.beta'
 gem 'hassle', :path => File.join(File.dirname(__FILE__), '/vendor/gems/hassle'), :group => :production 
 gem 'RedCloth'
+gem 'geokit'
+gem 'acts-as-taggable-on'
 gem "auto_html"
 
 group :test do
   gem "shoulda"
-  gem "webrat"
+  gem "capybara"
+  gem 'capybara-envjs', :require => 'capybara/envjs'
+  gem 'launchy'
+  gem "redgreen"
   gem "factory_girl_rails"
 end

@@ -6,4 +6,8 @@ class Company < ActiveRecord::Base
     self.country.present? && self.country == 'United States'
   end
   
+  def locations_info
+    self.locations.collect{|l| l.location_info}
+  end
+  
 end

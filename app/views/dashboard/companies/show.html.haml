@@ -1,5 +1,9 @@
 - content_for :on_ready do
   init_add_form(); 
+  init_location_form();
+  !== show_locations_on_map({}, #{@company.locations_info.to_json});
+
+= add_google_map  
 
 = title @company.name
 
@@ -45,6 +49,8 @@
       %td Description
       %td= @company.description
 
+#map.none
+
 %h2.left Locations
 .right.subnav= link_to 'Add Location', '#', :class => 'add_button', :to => '.location_form'
 .clear
@@ -53,6 +59,10 @@
   = semantic_form_for [:dashboard, current_user, @company, @company.locations.build], :remote => true, :html => { :class => 'none location_form' } do |f|
     = f.inputs do
       = f.input :name, :label => 'Name'
+      = f.input :country, :priority_countries => ["United States", "Canada", "United Kingdom"]
+      = f.input :state, :collection => STATES, :include_blank => false
+      = f.input :city
+      = f.input :address
       = f.input :description, :input_html => { :rows => '2', :cols => '40' }, :label => 'Location Description'
     = f.buttons do
       = f.submit 'Add new Location'

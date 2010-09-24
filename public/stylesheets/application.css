@@ -2561,37 +2561,41 @@ th .desc {
 }
 /* line 120, ../../app/stylesheets/application.sass */
 .locations .location {
+  font-size: 12px;
   margin-bottom: 6px;
   border-bottom: 1px solid #ececec;
   border-top: 1px solid #ececec;
 }
-/* line 124, ../../app/stylesheets/application.sass */
-.locations .location .location_date {
+/* line 125, ../../app/stylesheets/application.sass */
+.locations .location .full_address {
   float: left;
   width: 24%;
   padding-right: 1%;
-  font-size: 12px;
 }
 /* line 129, ../../app/stylesheets/application.sass */
-.locations .location .location_date .date {
-  font-weight: bold;
-}
-/* line 131, ../../app/stylesheets/application.sass */
 .locations .location .message {
   float: left;
   width: 50%;
 }
-/* line 134, ../../app/stylesheets/application.sass */
+/* line 132, ../../app/stylesheets/application.sass */
 .locations .location .controls {
   float: left;
   width: 10%;
 }
-/* line 137, ../../app/stylesheets/application.sass */
+/* line 135, ../../app/stylesheets/application.sass */
 .locations .location .name {
   float: left;
   width: 14%;
 }
-/* line 140, ../../app/stylesheets/application.sass */
+/* line 138, ../../app/stylesheets/application.sass */
 .locations .location .amount_total {
   margin-left: 25%;
+}
+
+/* line 141, ../../app/stylesheets/application.sass */
+#map {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 470px;
 }
