@@ -3,6 +3,7 @@ class Location < ActiveRecord::Base
   validates_presence_of :name
   scope :forward,  order('created_at ASC')
   scope :backward, order('created_at DESC')  
+  
 
   before_save :geocode_it!
   

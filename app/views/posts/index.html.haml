@@ -1,0 +1,4 @@
+%h1 #{@user.name} Posts
+
+- for post in @posts
+  .post= link_to post.title, [@user, post]

@@ -3,7 +3,9 @@ RailsjazzCom::Application.routes.draw do
     get 'logout'
   end
   resources :password_resets
-  resources :users
+  resources :users do
+    resources :posts, :only => [:index, :show]
+  end
   resources :companies, :only => [:show]
   
   namespace :admin do
@@ -20,6 +22,7 @@ RailsjazzCom::Application.routes.draw do
   namespace :dashboard do
     match '/', :to => 'dashboard#welcome'
     resources :users, :only => [] do
+      resources :posts
       resources :companies do
         resources :locations
       end

@@ -1,0 +1,11 @@
+= title @post.title
+
+%h1.left= @post.title
+.subnav.right
+  = link_to 'Public View', [current_user, @post], :class => 'public_view'
+  = link_to 'Edit', edit_resource_path(@post), :class => 'edit_button'
+  = link_to 'Delete', resource_path(@post), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_button'
+.clear
+
+!= @post.body_html
+

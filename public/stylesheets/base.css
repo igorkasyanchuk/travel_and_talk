@@ -709,6 +709,14 @@ html dl dt, html dl dl {
 }
 
 /* line 102, ../../app/stylesheets/text.sass */
+.public_view {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/blue-document--arrow.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 105, ../../app/stylesheets/text.sass */
 .bold_text {
   font-weight: bold;
 }
@@ -791,7 +799,7 @@ table.zebra {
   border: 0 none;
   margin-bottom: 1.4em;
   width: 100%;
-  margin: 0.8em 1px;
+  margin: 12px 1px;
 }
 /* line 14, ../../app/stylesheets/tables.sass */
 table.zebra th, table.zebra td, table.zebra caption, table.zebra thead {
@@ -1544,6 +1552,14 @@ html dl dt, html dl dl {
 }
 
 /* line 102, ../../app/stylesheets/text.sass */
+.public_view {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/blue-document--arrow.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 105, ../../app/stylesheets/text.sass */
 .bold_text {
   font-weight: bold;
 }
@@ -1638,26 +1654,56 @@ html dl dt, html dl dl {
 }
 
 /* line 45, ../../app/stylesheets/layout.sass */
+.container .mr10 {
+  margin-right: 10%;
+}
+
+/* line 48, ../../app/stylesheets/layout.sass */
+.container .mr1 {
+  margin-right: 1%;
+}
+
+/* line 51, ../../app/stylesheets/layout.sass */
+.container .mr5 {
+  margin-right: 5%;
+}
+
+/* line 54, ../../app/stylesheets/layout.sass */
+.container .ml10 {
+  margin-left: 10%;
+}
+
+/* line 57, ../../app/stylesheets/layout.sass */
+.container .ml1 {
+  margin-left: 1%;
+}
+
+/* line 60, ../../app/stylesheets/layout.sass */
+.container .ml5 {
+  margin-left: 5%;
+}
+
+/* line 63, ../../app/stylesheets/layout.sass */
 .container .w45 {
   width: 45%;
 }
 
-/* line 48, ../../app/stylesheets/layout.sass */
+/* line 66, ../../app/stylesheets/layout.sass */
 .container .w49 {
   width: 49%;
 }
 
-/* line 51, ../../app/stylesheets/layout.sass */
+/* line 69, ../../app/stylesheets/layout.sass */
 .container .w59 {
   width: 59%;
 }
 
-/* line 54, ../../app/stylesheets/layout.sass */
+/* line 72, ../../app/stylesheets/layout.sass */
 .container .w39 {
   width: 39%;
 }
 
-/* line 57, ../../app/stylesheets/layout.sass */
+/* line 75, ../../app/stylesheets/layout.sass */
 .container .w33 {
   width: 33%;
 }

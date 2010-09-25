@@ -1,0 +1,5 @@
+%h1.left== Edit: #{@location.name}
+.add.right
+  = link_to 'Back', [:dashboard, current_user, @location.company], :class => 'cancel_button'
+.clear
+= render 'form'

@@ -11,7 +11,7 @@ table.zebra {
   border: 0 none;
   margin-bottom: 1.4em;
   width: 100%;
-  margin: 0.8em 1px;
+  margin: 12px 1px;
 }
 /* line 14, ../../app/stylesheets/tables.sass */
 table.zebra th, table.zebra td, table.zebra caption, table.zebra thead {

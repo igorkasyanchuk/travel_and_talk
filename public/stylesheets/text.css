@@ -256,6 +256,14 @@ html dl dt, html dl dl {
 }
 
 /* line 102, ../../app/stylesheets/text.sass */
+.public_view {
+  padding-left: 18px;
+  padding-left: 18px !important;
+  background: url(/images/fugue/blue-document--arrow.png) no-repeat center left;
+  font-size: 12px;
+}
+
+/* line 105, ../../app/stylesheets/text.sass */
 .bold_text {
   font-weight: bold;
 }

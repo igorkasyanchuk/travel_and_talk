@@ -1,0 +1,17 @@
+= content_for :markitup do
+  = javascript_include_tag "markitup/jquery.markitup"
+  = javascript_include_tag "markitup/sets/textile/set"
+  <link rel="stylesheet" type="text/css" href="/javascripts/markitup/skins/markitup/style.css" />
+  <link rel="stylesheet" type="text/css" href="/javascripts/markitup/sets/textile/style.css" />
+
+= error_messages_for :post
+
+= semantic_form_for([:dashboard, current_user, @post]) do |f|
+  = f.inputs do
+    = f.input :title
+    = f.input :body
+  = f.buttons do
+    = f.submit f.object.new_record? ? 'Create' : "Update"
+    
+= content_for :on_ready do
+  $('#post_body').markItUp(mySettings);

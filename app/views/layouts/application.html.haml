@@ -8,6 +8,7 @@
     = javascript_include_tag 'jquery-1.4.2.min', 'jquery-ui-1.8.4.custom.min', 'rails.jquery', 'jquery.uniform.min', 'application'
     = csrf_meta_tag
     = yield :map
+    = yield :markitup
     %script{:type => 'text/javascript', :charset => 'utf-8'}
       $(document).ready(function() {
       = yield :on_ready

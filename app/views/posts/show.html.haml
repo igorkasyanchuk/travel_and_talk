@@ -1,0 +1,8 @@
+= title @post.title
+
+.public_post
+  = link_to "&larr; View all #{@user.name} Posts".html_safe, [@user, :posts]
+  
+  %h1= @post.title
+  
+  != @post.body_html

@@ -13,43 +13,43 @@
   = link_to 'Delete', resource_path(@company), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_company_button'
 .clear
 
-%table.zebra.w49
-  - if @company.name.present?
-    %tr
-      %td Name
-      %td= @company.name
-  
+%table.zebra.left.w49.mr1
   - if @company.company_category.present?
     %tr
-      %td Category
+      %td.table_block Category
       %td= @company.company_category.name
       
   - if @company.country.present?
     %tr
-      %td Country
+      %td.table_block Country
       %td= @company.country
       
   - if @company.from_usa? && @company.state.present?
     %tr
-      %td State
+      %td.table_block State
       %td= @company.state
 
   - if @company.city.present?
     %tr
-      %td City
+      %td.table_block City
       %td= @company.city
       
   - if @company.city.present?
     %tr
-      %td Address
+      %td.table_block Address
       %td= @company.address
       
   - if @company.description.present?
     %tr
-      %td Description
+      %td.table_block Description
       %td= @company.description
+  %tr
+    %td.table_block Locations
+    %td #{@company.locations.count}
 
-#map.none
+.left.w49
+  #map.none{:style => 'height: 200px; margin-top: 12px'}
+.clear
 
 %h2.left Locations
 .right.subnav= link_to 'Add Location', '#', :class => 'add_button', :to => '.location_form'
@@ -63,7 +63,7 @@
       = f.input :state, :collection => STATES, :include_blank => false
       = f.input :city
       = f.input :address
-      = f.input :description, :input_html => { :rows => '2', :cols => '40' }, :label => 'Location Description'
+      = f.input :description, :input_html => { :rows => '3', :cols => '40' }, :label => 'Location Description'
     = f.buttons do
       = f.submit 'Add new Location'
       = link_to 'Hide', '#', :class => 'hide cancel_button'

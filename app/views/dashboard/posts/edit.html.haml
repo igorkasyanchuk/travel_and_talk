@@ -1,0 +1,7 @@
+%h1.left== Edit: #{@post.title}
+.add.right
+  = link_to 'Back', collection_path, :class => 'cancel_button'
+  = link_to 'Show', resource_path(@post), :class => 'show_button'
+  = link_to 'Delete', resource_path(@post), :confirm => 'Are you sure?', :method => :delete, :class => 'delete_button'
+.clear
+= render 'form'

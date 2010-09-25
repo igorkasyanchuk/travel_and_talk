@@ -4,6 +4,12 @@
 
 $border_for_notice: unquote("1px solid #ccc")
 
+$width = 98%
+$margin = 1%
+$max_width: 1600px
+
+$border_for_notice: unquote("1px solid #ccc")
+
 =bordered($color: red)
   border: unquote("1px solid #{$color}")
 
@@ -12,7 +18,10 @@ $border_for_notice: unquote("1px solid #ccc")
   +omega
 
 #root
-  +grid-system(16)
+  margin-left: auto
+  margin-right: auto
+  width: $width
+  max-width: $max_width
   #header
     +grid-container
     height: 80px
@@ -37,9 +46,13 @@ $border_for_notice: unquote("1px solid #ccc")
             padding: 2px 2px
   #content
     .container
-      +grid(16)
+      display: inline
+      float: left
+      margin-left: $margin
+      margin-right: $margin
+      width: $width - $margin
+      max-width: $max_width
     div.flash
-      +grid(15)
       margin-top: 0.6em
       margin-bottom: 0.6em
       +alpha
@@ -136,10 +149,29 @@ th
       float: left
       width: 14%
     .amount_total
-      margin-left: 25%
+      margin-left: 90%
       
 #map
   margin-top: 0px
   margin-bottom: 20px
   width: 100%
-  height: 470px     
+  height: 470px
+  
+form.formtastic ol li.text .textile
+  float: left
+  width: 75%
+  .markItUpEditor
+    background: none
+    font-size: 14px
+  textarea
+    width: 100%
+  .markItUp
+    margin: 0
+    width: 75%
+    padding: 0
+    border: 0  
+  .markItUpContainer
+    border: 1px solid #ddd
+    
+.public_post
+  padding-top: 16px

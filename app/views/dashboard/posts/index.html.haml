@@ -1,0 +1,17 @@
+%h1.left Posts
+.subnav.right= link_to 'Add Post', new_resource_path, :class => 'add_button'
+.clear
+
+- unless @posts.empty?
+  %table.zebra
+    %thead
+      %tr
+        %th Title
+    %tbody
+      - for post in @posts
+        %tr{ :class => "#{cycle(:odd, :even)}" }
+          %td= link_to post.title, [:dashboard, current_user, post]
+
+- else
+  %p
+    %strong List is empty.

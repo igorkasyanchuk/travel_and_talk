@@ -16,8 +16,11 @@ class User < ActiveRecord::Base
   validates_presence_of :password_confirmation, :if => :require_password?
   
   has_many :companies, :dependent => :destroy
+  has_many :posts, :dependent => :destroy
   
   scope :admins, where(:admin => true)
+  scope :forward,  order('created_at ASC')
+  scope :backward, order('created_at DESC')  
   
   def name
     "#{first_name} #{last_name}"
