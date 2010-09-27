@@ -18,4 +18,6 @@ class Post < ActiveRecord::Base
   scope :backward, order('created_at DESC')  
   scope :pending, where('published_on is NULL')
   scope :published, where('published_on is not NULL')
+  
+  belongs_to :user
 end

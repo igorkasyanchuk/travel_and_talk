@@ -1,1 +1,8 @@
-%h1 Business 2 Map
+- content_for :on_ready do
+  init_add_form(); 
+  init_location_form();
+  !== show_global_locations_on_map(#{Company.all.collect{|c| c.locations_info}.to_json});
+
+= add_google_map
+
+#global_map.none

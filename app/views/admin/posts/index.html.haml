@@ -1,0 +1,18 @@
+%h1.left Manage all Posts
+.clear
+
+- unless @posts.empty?
+  %table.zebra
+    %thead
+      %tr
+        %th Title
+        %th Actions
+    %tbody
+      - for post in @posts
+        %tr{ :class => "#{cycle(:odd, :even)}" }
+          %td= link_to post.title, [post.user, post]
+          %td= link_to 'delete', [:admin, post], :method => :delete, :confirm => 'Are you sure?', :class => 'delete_button'
+
+- else
+  %p
+    %strong List is empty.

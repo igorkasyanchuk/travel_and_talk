@@ -58,6 +58,25 @@ var location_icon;
 var client_icon;
 var map;
 
+function show_global_locations_on_map(company_locations) {
+  var latlng = new google.maps.LatLng(CENTER_OF_THE_WORLD_LAT, CENTER_OF_THE_WORLD_LNG);
+  //var latlng = new google.maps.LatLng(center.lat, center.lng);
+  var myOptions = {
+    zoom: 2,
+    center: new google.maps.LatLng(CENTER_OF_THE_WORLD_LAT, CENTER_OF_THE_WORLD_LNG),
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: true
+  };
+  var map = new google.maps.Map(document.getElementById("global_map"), myOptions);
+  info_window = new google.maps.InfoWindow({ content: '' });
+  $('#global_map').show();
+  $.each(company_locations, function() {
+    $.each($(this), function() {
+      add_location_icon(this, map);
+    });
+  });
+};
+
 function show_locations_on_map(center, locations) {
   var latlng = new google.maps.LatLng(CENTER_OF_THE_WORLD_LAT, CENTER_OF_THE_WORLD_LNG);
   //var latlng = new google.maps.LatLng(center.lat, center.lng);
